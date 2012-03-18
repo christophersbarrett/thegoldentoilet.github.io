@@ -1,0 +1,703 @@
+/* Global Styles
+----------------------------*/
+
+html, body {
+  margin: 0;
+  background-color: #f5f5f5;
+  color: #313131;
+  font-size: 1em;
+}
+
+a:link { color: #313131; }
+a:visited { color: #313131; }
+a:hover, 
+a:active { color: #908c8c; }
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.3em; }
+h4 { font-size: 1.1em; }
+
+strong { font-weight:bold; }
+
+div.clear {
+  clear:both;
+}
+
+div.last {
+	boder:none;
+}
+
+.hide {
+	display:none;
+}
+
+/* Button Styles
+----------------------------*/
+
+a.highlight-button, input.highlight-button {
+	background:#373d43;
+	border:3px solid #d4d2d2;
+	padding:15px 25px 15px 25px;
+
+	font-size:1.2em;
+	border-radius: 40px; /* No longer supporting old browsers */
+	-moz-border-radius: 40px; /* Fix for FF */
+	text-decoration:none;
+	color: #D6D6D6;
+	text-shadow:none;
+}
+
+a.highlight-button-circle {
+	background:#b4b2b2;
+	padding:2px 15px;
+	
+	font-size:1.2em;
+	border-radius: 60px; /* No longer supporting old browsers */
+	-moz-border-radius: 60px; /* Fix for FF */
+	text-decoration:none;
+	color: #D6D6D6;
+	text-shadow: none;
+}
+
+a.highlight-button:hover, input.highlight-button:hover {
+	border:3px solid #b4b2b2;
+	color: #fff;
+}
+
+a.highlight-button-circle:hover {
+	background:#566472;
+	color: #fff;
+}
+
+/* Layout Styles
+----------------------------*/
+
+div#container { 
+  width: 900px; 
+  margin: 0px auto;
+}
+
+
+/* Header
+----------------------------*/
+
+div#header {
+  border-bottom: 4px solid #e1e0e0;
+  padding: 60px 0;
+}
+
+div#header h1 {
+  float:left;
+  font-size: 3em;
+}
+
+div#header h1 a {
+  text-decoration: none;
+  color: #313131;
+}
+
+
+/* Content
+----------------------------*/
+
+div#content { }
+
+div#content h2 { 
+
+  font-size:2.3em;
+  margin:25px 0 25px 0;
+}
+
+div.content-pane {
+	margin-top:60px;
+
+}
+
+div.pane {
+	height: 700px;
+}
+
+div.content-pane div.pane {
+	border-bottom:4px solid #e1e0e0;
+	margin-bottom:60px;
+	position: relative;
+	height: 700px;
+}
+
+div.content-pane div.last {
+	border:none;
+	height: 500px;
+}
+
+/* About Me Intro */
+
+div#top-intro {
+
+  font-size:1.2em;
+	margin:0 0 0px 0;
+	padding:10px 0 0px 0;
+	border-bottom:4px solid #e1e0e0;
+}
+
+div.home div#intro-holder {
+	background:url(../images/dojoToolkitLogo.png) center left no-repeat;
+	padding:0 0 0 270px;
+	height:130px;
+	margin-left: -30px;
+}
+
+div#top-intro p {
+	color:#999999;
+	margin: 0px 0px 0px 10px;
+	padding-bottom: .5em;
+	padding-top: 1em;
+}
+
+div#top-intro h2 {
+
+}
+
+div#top-intro p a {	color:#999999; }
+
+.jobsContainer {
+	margin-bottom: 50px;
+	margin-left: 100px;
+	margin-top: 50px;
+}
+/* Portfolio page
+----------------------------*/
+
+div.intro {
+	float:left;
+	width:450px;
+	margin-top:25px;
+}
+
+div.intro p {
+
+	font-size:1.1em;
+	margin: 0 0 14px 0;
+	color: #313131;
+}
+
+div.intro a {
+	font-size:1.1em;
+	margin: 0 0 14px 0;
+	color: #999999;
+}
+
+div.intro div.links {
+	margin-top:60px;
+}
+
+div.intro div.links a {
+	margin-right:25px;
+}
+
+div.work-panel {
+	float:right;
+	margin-bottom:30px;
+	width: 362px;
+}
+
+div.work-panel div.work-images {
+	margin-top:25px;
+}
+
+.timeline {
+	display:block;
+	height:100px;
+	width:880px;
+	padding-left:20px;
+
+}
+
+/* Blog Posts panel
+----------------------------*/
+
+div.posts {
+	margin-bottom: 45px;
+	margin-top: 45px;
+}
+
+div.posts-list {
+	margin-bottom: 45px;
+	margin-top: 45px;
+	float:left;
+	width:650px;
+}
+
+div.side-bar {
+	float:right;
+	margin-bottom: 45px;
+	margin-top: 45px;
+	width:200px;
+}
+
+ul.side-list-menu {
+	margin-top:20px;
+	margin-bottom:20px;
+	float:left;
+}
+
+ul.side-list-menu li {
+	background:#586674;
+	margin-bottom:10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	float:left;
+	width:187px;
+}
+
+ul.side-list-menu li a {
+	padding:10px;
+	color:#fff;
+	text-decoration:none;
+	display:block;
+}
+
+ul.side-list-menu li a span.date {
+	float:left;
+	 margin-bottom: 8px;
+}
+
+ul.side-list-menu li a span.count {
+	padding:2px;
+	background:#fff;
+	float:right;
+	color:#000;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-size:0.8em;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+/* Post */
+
+.white {
+	background-color: #fff;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.blog-post a,
+.blog-post a:link,
+.blog-post a:visited {
+  font-weight: bold;
+	 color: #000066;
+}
+
+.blog-post a:active,
+.blog-post a:hover {
+  color: #333333;
+}
+div.post {
+	width:430px;
+	float:left;
+	margin-bottom: 35px;
+	margin-right: 20px;
+	height:100px;
+}
+
+div.posts-list div.post {
+	padding-bottom:20px;
+	margin-bottom:20px;
+	border-bottom:1px dotted #586674;
+	width: 650px;
+}
+
+div.posts-list div.post:last {
+	border:none;
+}
+
+div.posts-list div.post div.summary {
+	width:528px;
+}
+
+div.alternate {
+	margin-right: 0px;
+}
+
+div.post:hover {
+	
+}
+
+div.post:hover div.summary {
+	color: #566472;
+}
+
+div.post:hover div.summary h3 a{
+	color: #566472;
+}
+
+div.post:hover div.summary a.comments {
+	color: #566472;
+}
+
+div.post div.summary {
+	float: left;
+	width: 300px;
+}
+
+div.post h3 {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+
+div.post p {
+	font-size: 0.8em;
+	margin-bottom: 6px;
+}
+
+div.post a.comments {
+	font-size: 0.8em;
+}
+
+div.post div.date {
+	float:left;
+	background:#d6d6d6;
+	width:110px;
+	height:85px;
+	margin-right:10px;
+	padding-top:5px;
+
+	border-radius: 5px; /* No longer supporting old browsers */
+	-moz-border-radius: 5px; /* Fix for FF */
+}
+
+div.post div.date span.day, div.post div.date span.month {
+	margin:0px auto;
+	width:100px;
+	text-align:center;
+	display:block;
+} 
+
+div.post div.date span.day {
+	font-size:3em;
+	color:#4d4b4b;
+	font-weight:bold;
+}
+
+div.post div.date span.month {
+	font-size:0.75em;
+}
+
+/* Holding Page
+----------------------------*/
+
+div.holding-container h1 {
+	float:left;
+	font-size: 3em;
+}
+
+div.holding-container h1 a {
+  text-decoration: none;
+  color: #566472;
+}
+
+div.holding-container div.intro {
+	float: left;
+}
+
+/* Contact Pane
+----------------------------*/
+
+div.contact-intro {
+	float: left;
+	width: 420px;
+}
+
+div.contact-intro p {
+	margin-bottom: 20px;
+}
+
+div.contact-form {
+	float: right;
+	width: 400px;
+}
+
+p.cv-link {
+	margin-top:20px;
+	margin-bottom:20px;
+	float:left;
+}
+
+/* Blog Post
+----------------------------*/
+
+div.post-intro {
+
+  font-size:1.33em;
+	margin:0 0 40px 0;
+	padding:30px 0 20px 0;
+	border-bottom:4px solid #e1e0e0;
+}
+
+div.post-intro div.intro-content div.thumb {
+	float:left;
+	margin-right:10px;
+}
+
+div.post-intro div.intro-content div.details {
+	float: left;
+	margin-left: 20px;
+	width: 737px;
+}
+
+#content div.post-intro div.intro-content div.details h2 {
+	margin-top:0px;
+	margin-bottom:10px;
+}
+
+#content div.post-intro div.intro-content div.details p {
+	color:#aaaaaa;
+}
+
+#content div.post-intro div.intro-content div.details p.posted {
+	font-size:0.65em;
+	margin-top:10px;
+}
+
+.post-content {
+	padding:25px;
+	padding-top:0px;
+}
+
+.post-content p {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.post-content ul {
+	padding-left:30px;
+}
+
+.post-content ul li {
+	margin-bottom:5px;
+	list-style:disc;
+}
+
+.post-content div.CodeRay {
+	background:#000;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:25px;
+}
+
+
+.post-bottom {
+	border-top:4px solid #e1e0e0;
+	margin-top:30px;
+	padding-top:30px;
+}
+
+.post-bottom .post-comments {
+	float:left;
+	width:600px;
+}
+
+.post-bottom .post-sidebar {
+	float:right;
+	width:200px;
+}
+
+.post-bottom .post-comments #dsq-content h3 {
+	font-size:1.4em;
+}
+
+/* Work Panel
+----------------------------*/
+
+div.portfolio-panels {
+	
+}
+
+div.portfolio-panels div.portfolio-panel {
+	width: 900px;
+	margin:0px;
+}
+
+div.portfolio-panels div.portfolio-panel div.details {
+	float: left;
+	width: 800px;
+}
+
+div.portfolio-panels div.portfolio-panel div.details h3 {
+	color: #aaa;
+	font-size: 2.4em;
+	margin-bottom: 10px;
+}
+
+
+div.portfolio-panels div.portfolio-panel div.details p.link {
+	font-size: 0.9em;
+	margin-top: 10px;
+}
+
+
+div.portfolio-panels div.portfolio-panel div.details p.description {
+	text-transform: uppercase;
+	font-size: 0.9em;
+}
+
+div.portfolio-panels div.portfolio-panel div.portfolio-image {
+	background: #556371;
+	padding: 4px 4px 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-bottom:20px;
+}
+
+div.portfolio-panels div.portfolio-panel div.portfolio-image img {
+	height: 292px;
+    width: 892px;
+}
+
+
+div.porfolio-navigation {
+	position: absolute;
+	top: 396px;
+	right: 0px;
+	z-index:999;
+}
+
+div.scroll {
+	height: 600px;
+	width: 900px;
+	overflow-y: scroll;
+	overflow-x: scroll;
+	border: 1px solid #666;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+div.resumeButton {
+	padding: 10px;
+	float:right;
+	position: relative;
+	background:#373d43;
+	border:3px solid #d4d2d2;
+	font-size:1em;
+	border-radius: 40px; /* No longer supporting old browsers */
+	-moz-border-radius: 40px; /* Fix for FF */
+	text-decoration:none;
+	text-shadow:none;
+}
+
+.resumeButton a {
+	color: #fff;
+}
+/* Form
+----------------------------*/
+
+div.form-row {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+div.form-row label {
+	display: none;
+}
+
+div.form-row input.std, div.form-row select, div.form-row textarea {
+	color: #566472;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 2px solid #E1E0E0;
+	padding: 10px 71px 10px 10px;
+	width: 300px;
+}
+
+div.form-row input.std:focus, div.form-row select:focus, div.form-row textarea:focus {
+	border: 2px solid #566472;
+}
+
+div.form-row div.error {
+	background: url(../images/required.gif) top left no-repeat;
+	padding-left: 61px;
+	position: absolute;
+	top: 0px;
+	left: 323px;
+	height:41px;
+}
+
+div.form-row div.error span.message {
+	display:none;
+}
+
+div.text-area div.error span.message {
+	height: 159px;
+}
+
+div.text-area div.error {
+	background: url(../images/required.gif) top left no-repeat;
+}
+
+
+div.error-state {
+	
+}
+
+div.submit-row {
+	
+}
+
+div.submit-row input {
+	float: left;
+}
+
+div.error-message {
+	float: left;
+	font-size: 0.8em;
+	margin-left: 10px;
+	padding-top: 15px;
+	width: 195px;
+	color: #AC2020;
+}
+
+div.confirm {
+	background:#d6d6d6;
+	margin-right:10px;
+	padding:20px;
+
+	border-radius: 5px; /* No longer supporting old browsers */
+	-moz-border-radius: 5px; /* Fix for FF */
+}
+
+/* Footer
+----------------------------*/
+
+div#footer {
+	border-top:4px solid #e1e0e0;
+	margin:40px 0 20px 0;
+	padding:30px 0 30px 0;
+}
+
+div#footer a:link {
+	color:#999;
+}
+
+div#footer p {
+	float:left;
+	width:200px;
+}
+
+div#footer ul#links {
+	float:right;
+}
+
+div#footer ul#links li {
+	float:left;
+	padding:0 40px 10px 20px;
+}
+
+div#footer ul#links li a {
+	color:#566472;
+}
+

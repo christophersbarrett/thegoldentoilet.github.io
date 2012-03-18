@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="en" class="js">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+		<title>Christopher Barrett - JavaScript, Dojo, PHP and more!</title>
+		
+		<meta name="author" content="Chris Barrett">
+		<meta name="description" content="Christopher Barrett - Javascript, Dojo, PHP and more!">
+		<meta name="keywords" content="christopher barrett, ruby on rails, php, web developer">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+		<link href="../../../css/prettify.css" media="screen" type="text/css" rel="stylesheet" />
+
+		<link href="../../../css/reset.css" media="screen" rel="stylesheet" type="text/css">
+		<link href="../../../css/master.css" media="screen" rel="stylesheet" type="text/css">
+		<link href="../../../css/nav.css" media="screen" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/dojo/1.7.1/dijit/themes/claro/claro.css" media="screen">
+	</head>
+
+	<body class="claro" onload="prettyPrint()">
+	<a id="top" href="#top"></a>
+	<div id="container">
+		<div id="nav-header" class="header-cntnr">
+			<div class="header-wrap wrap">
+		        <header>
+					<div id="header-nav-placeholder"></div>
+					<div id="header-nav-float">
+						<nav id="header-nav" class="wrap">
+							<div class="previousPost"><a id="previousArrow" href="../../2011/12/web-5-conf.html" title="Blog Post: web-5">Previous Post</a></div>
+							<a href="../../../index.html#top" title="Home">Home</a>
+							<a href="../../../index.html#work" title="My work" id="awork">Work</a>
+							<a href="#blog" title="My opinions, as if anyone cares">Blog</a>
+							<a href="../../../index.html#contact" type="" title="Ring me on the tele">Contact</a>
+							<div class="nextPost"><a id="nextArrow" href="../../2012/2/top-bar-animation.html" title="Blog Post: top bar animation">Next Post</a></div>
+					    </nav>
+						<div id="work-nav-overlay"></div>
+						<div id="work-nav-float" class="work-nav-floating">
+							<nav id="work-nav" class="wrap">
+							</nav>
+							<div id="work-nav-float-hover-arrow"></div>
+							<div id="work-nav-float-active-arrow"></div>
+						</div>
+					</div>
+					<div id="header-anim">
+						<div id="header-anim-logo"></div>
+						<div id="header-anim-logo-shadow"></div>
+					</div>
+		        </header>
+		    </div>
+		</div>
+		<div id="header">
+			<br><h1><a href="http://www.christopherbarrett.name/" title="Christopher Barrett - JavaScript, Dojo, PHP and more!">Christopher Barrett</a></h1>
+		</div>
+		<div id="content">
+			<div class="content-pane" >
+				<div class="blog-post" id="blog">
+					<h2>How-to: a dojox Charting work experience timeline</h2>
+					<p>When creating my last personal website, I decided I wanted to put the power of Dojo Charting to use in a work experience timeline.
+					This timeline chart would would give a horizontal representation in width to how long I was at a job, with each job being a different
+					color spanning the years as labeled underneath.</p>
+					<p>
+					I currently rewrote this widget using Dojo 1.7.1, and as you can see on my main page - there is currently a bug with tooltips
+					(handily fixed by Tom Trenka in trunk) that is causing the tooltip to hangout on the left side of the page.</p>
+
+					<p>We start with loading up all the dependencies for this widget</p>
+					<div class="white"><code class="prettyprint">
+&lt;script src="http://ajax.googleapis.com/ajax/libs/dojo/1.7.1/dojo/dojo.js" data-dojo-config="isDebug: true, async: true"&gt;&lt;/script&gt;
+&lt;script&gt;
+	require(["dojo/dom-class","dojox/charting/Chart",
+			"dojox/charting/action2d/Tooltip","dojo/query",
+			"dojox/charting/themes/Claro","dojox/charting/plot2d/Bars",
+			"dojox/charting/axis2d/Default","dojo/domReady!"],
+			function(domClass, Chart, Tooltip, query, theme) {
+					</code></div>
+
+					<p>We grab dom-class to handle interacting with the widget and handling user events (such as clicking on a portion to change
+					which job is displayed), but it is not necessary to display just the chart itself.</p>
+
+					<p>Notice that even though we load Bars and Default, we don't need to hold references to them in order to build the chart. Getting started,
+					we create a chart:</p>
+					<div class="white"><code class="prettyprint">
+var chart = new Chart("jobTimeline",{fill:null}).setTheme(theme).
+		addAxis("x", {
+		includeZero: true, fontColor:"black",
+		labels: [{value: 0, text: "2002"},
+			{value: 1, text: "2003"}, {value: 2, text: "2004"},
+			{value: 3, text: "2005"}, {value: 4, text: "2006"},
+			{value: 5, text: "2007"}, {value: 6, text: "2008"},
+			{value: 7, text: "2009"}, {value: 8, text: "2010"},
+			{value: 9, text: "2011"}, {value: 10, text: "2012"}
+		],
+		rotation: 45
+	}).
+					</code></div>
+					<p>
+					Lets step through some of the attributes shown here, we are first giving the chart it's new home: the jobTimeline domNode. Standard stuff.
+					We set the theme to the chart, which will set default colors - then we create the x axis.</p>
+
+						<p>What is important to note is that we are setting
+					the includeZero attribute to true.  This makes sure that our label for the beginning of the chart is anchored at 2002 when rendered.  You
+					will also notice that the values for the labels aren't perfectly linear, this is because I didn't end up switching jobs each year - so only
+					some years have labels to them.</p>
+
+					<p>Now here's the real trick, setting the y axis. After a little bit of experimentation, I found that setting the y axis 1 unit high was
+					all I needed to do to give the impression of a time-line. If you are a clever reader, you'll remark that this causes the bars to stack
+					upon one another - and you would be correct.</p>
+
+					<div class="white"><code class="prettyprint">
+		addAxis("y", {vertical: true,  natural: true, labels: [{value:1, text: " "}]}).
+		addPlot("default", {type: "Bars"}).
+		addSeries("Series A", [1]).
+		addSeries("Series B", [1.8]).
+		addSeries("Series C", [2.5]).
+		addSeries("Series D", [4.1]).
+		addSeries("Series E", [5]).
+		addSeries("Series F", [6.7]).
+		addSeries("Series G", [9]).
+		addSeries("Series H", [10]);
+					</code></div>
+					<p>
+					After adding the y axis, we add a plot to the default with a type of Bars.  This is both where our dependencies "dojox/charting/plot2d/Bars", and
+					"dojox/charting/axis2d/Default" come into play. You'll need to load Default as well as which type of plot you want - even if you don't need a reference to them.
+					I go on to add a series for each job that I have held.  The numbers given become important when you want to both track which job is being clicked on,
+					as well as for the Tooltips to function correctly.
+					</p>
+					<p>Only two lines are left to get our chart to render: </p>
+					<div class="white"><code class="prettyprint">
+		var anim4b = new Tooltip(chart, "default", {text: makeTooltip});
+		chart.render();
+					</code></div>
+					<p>Ah ha you say, what is this "makeTooltip" that I am referencing?  I am using a function to pass text values into the Tooltip: </p>
+					<div class="white"><code class="prettyprint">
+		makeTooltip = function(o) {
+			var text;
+
+			switch (o.x) {
+			case 1:
+				text = "Runzheimer, Intl - Intern";
+				break;
+			case 1.8:
+				text = "Web Developer - WRCHD";
+				break;
+
+			...
+
+			case 9:
+				text = "Academic Technology Developer - Learning Solutions UW-Madison";
+				break;
+			case 10:
+				text = "Software Engineer - Sitepen, inc.";
+				break;
+			}
+			return text;
+		};
+					</code></div>
+
+					<p>This function takes the x value of the bar that you are hovering over, and grabs the text for that x value.  This is why it was important to keep track of the value of each series you added.
+					</p>
+					<p>
+					Only one piece is left, event handling: clicking and hovering. This is accomplished using the connectToPlot event handler that ships with Chart. You pass it which plot you want to listen to
+						and it uses a callback to let you customize your event handling.
+					</p>
+					<div class="white"><code class="prettyprint">
+		chart.connectToPlot("default",function(evt) {
+			var shape = evt.shape, type = evt.type;
+			if(type == "onmouseover") {
+				if(!shape.originalFill) {
+					shape.originalFill = shape.fillStyle;
+				}
+				shape.setFill("lightblue");
+			}
+			else if(type == "onmouseout") {
+				shape.setFill(shape.originalFill);
+			}
+			else if(type == "onclick"){
+				 x = evt.x;
+				changeJob(x.toString(), domClass);
+			}
+		});
+					</code></div>
+					<p>That's all there is to it, easy as pie! chart!  Okay sorry for the pun.</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p class="copyright">© 2012 <a href="http://christopherbarrett.name/">Christopher Barrett</a></p>
+		<ul id="links">
+			<li><a href="http://github.com/thegoldentoilet"><img src="../../../images/github.png" alt="Chris' github account"></a>
+			</li>
+			<li><a href="http://twitter.com/thegoldentoilet"><img src="../../../images/twitter.png" alt="Chris' twitter account"></a></li>
+			<li><a href="http://www.linkedin.com/profile/view?id=98179637"><img src="../../../images/linkedin.gif" alt="Chris Barrett on linkedIn"></a>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="../../../js/prettify/prettify.js"></script>
+	<script src="../../../js/modernizr-1.6.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+
+<html lang="en" class="js">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+		<title>Christopher Barrett - JavaScript, Dojo, PHP and more!</title>
+		
+		<meta name="author" content="Chris Barrett">
+		<meta name="description" content="Christopher Barrett - Javascript, Dojo, PHP and more!">
+		<meta name="keywords" content="christopher barrett, ruby on rails, php, web developer">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+		<link href="css/prettify.css" media="screen" type="text/css" rel="stylesheet" />
+
+		<link href="css/reset.css" media="screen" rel="stylesheet" type="text/css">
+		<link href="css/master.css" media="screen" rel="stylesheet" type="text/css">
+		<link href="css/nav.css" media="screen" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/dojo/1.7.2/dijit/themes/claro/claro.css" media="screen">
+	</head>
+
+	<body class="claro" onload="prettyPrint()">
+	<a id="top" href="#top"></a>
+	<div id="container">
+		<div id="nav-header" class="header-cntnr">
+			<div class="header-wrap wrap">
+		        <header>
+					<div id="header-nav-placeholder"></div>
+					<div id="header-nav-float">
+						<nav id="header-nav" class="wrap">
+							<a href="#top" title="Home">Home</a>
+							<a href="#work" title="My work" id="awork">Work</a>
+							<a href="#blog" title="My opinions, as if anyone cares">Blog</a>
+							<a href="#contact" type="" title="Ring me on the tele">Contact</a>
+					    </nav>
+						<div id="work-nav-overlay"></div>
+						<div id="work-nav-float" class="work-nav-float">
+							<nav id="work-nav" class="wrap">
+								<a id="atimeline" href="#work" title="Work timeline">Work Timeline</a>
+								<a id="aportfolio" href="#work" title="Project Portfolio">Project Portfolio</a>
+								<a id="acode" href="#work" title="Code Samples">Code Samples</a>
+								<a id="atechnologies" href="#work" title="Technologies">Technologies</a>
+							</nav>
+							<div id="work-nav-float-hover-arrow"></div>
+							<div id="work-nav-float-active-arrow"></div>
+						</div>
+					</div>
+					<div id="header-anim">
+						<div id="header-anim-logo"></div>
+						<div id="header-anim-logo-shadow"></div>
+					</div>
+		        </header>
+		    </div>
+		</div>
+		<div id="header">
+			<br><h1><a href="http://www.christopherbarrett.name/" title="Christopher Barrett - JavaScript, Dojo, PHP and more!">Christopher Barrett</a></h1>
+		</div>
+		<div id="content">
+			<div id="top-intro" class="home">
+				<div id="intro-holder">
+					<p>Hello my name is Chris, I'm a software engineer based in Madison, WI USA.</p>
+					<p>I love all things Dojo, JavaScript, and also many server-side solutions.</p>
+				</div>
+				<div id="work" name="work" style="padding-bottom: 40px;"></div>
+			</div>
+			<div class="content-pane" >
+				<div class="pane" id="workPane" name="workPane">
+					<h2>My work</h2>
+					<div class="intro">
+						<p>As a software engineer for Sitepen, Inc., I develop enterprise level JavaScript web applications using the Dojo Toolkit, as well as
+						contribute to the Dojo Foundation project <a href="https://github.com/SitePenChrisBarrett/dgrid">dGrid</a>, write documentation and <a href="http://www.dojotoolkit.org/documentation">tutorials</a> for the toolkit. </p>
+
+						<p>During my tenure as a Academic Technologist at UW-Madison I developed several games and simulations, as well as integrated the <a href="http://sourceforge.net/apps/mediawiki/djatoka/index.php?title=Main_Page" >djatoka image server</a> into
+						the <a href="http://forward.library.wisconsin.edu/">Forward</a> library portal.
+						Before that, I supported and developed a health insurance application, and even before that I worked for a startup in the time and attendance industry. To view my full work history,
+						click "Work Timeline" up above. </p>
+					</div>
+					<div class="work-panel">
+						<div class="work-images" style="position: relative;">
+							<img src="images/me.jpg" alt="Chris Barrett" />
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div id="portfolio" class="pane hide" >
+                    <h1>Portfolio</h1>
+
+					<div style="width:50%; position:relative;float:right;padding-top: 20px;">
+						<a data-dojo-type="dojox.image.LightboxNano" title="Commodities Risk Management - prototype" href="images/screens/CRMScreen.png">
+						<img src="images/screens/CRMScreen.png" alt="CRM screenshot" width="100" height="55" style="border-style:none;"/><br/>
+						Commodities Risk Management</a>
+						<h4  style="font-size:80%;">
+						<a href="http://crm.doit.wisc.edu" target="_blank">http://crm.doit.wisc.edu</a><br />
+						Commodities Risk Management is a grant funded project to develop a simulation of the commodities market.
+						This prototype is live and under development, but will be used in the classroom during the spring semester.
+						The UI in this app is almost 100% javascript courtesy of the <a href="www.dojotoolkit.org" target="_blank">Dojo toolkit</a>.
+						</h4>
+					</div>
+					
+					<div style="width:50%; padding-top: 20px; float:left;">
+						<a data-dojo-type="dojox.image.LightboxNano" title="Birdie Publishing" href="images/screens/birdieScreen.png">
+						<img src="images/screens/birdieScreen.png" alt="birdie publishing screenshot"  width="100" height="55" style="border-style:none;"/><br/>
+						Birdie Publishing</a>
+						<h4 style="font-size:80%;">
+						<a href="http://www.birdiepublishing.com" target="_blank">www.birdiepublishing.com</a> <br />
+						Birdie Publishing is a small publishing firm in the craft/resale niche market. The site is mostly written using the Dojo Toolkit,
+						including a small online catalog and a smart form to get listed in their guides.  The catalog is completely dynamic, using data in the database.
+						</h4><br />
+					</div>
+
+					<div style="width:50%; position:relative;padding-top: 40px; float:right;">
+						<a data-dojo-type="dojox.image.LightboxNano" title="Malaria - The Game" group="malaria" href="images/screens/MalariaScreen1.png">
+						<img src="images/screens/MalariaScreen1.png" alt="Malaria screenshot" width="100" height="55" style="border-style:none;"/><br/>
+						Malaria - The Game</a>
+						<a data-dojo-type="dojox.image.LightboxNano" title="Malaria - The Game" group="malaria" href="images/screens/MalariaScreen2.png"></a>
+						<a data-dojo-type="dojox.image.LightboxNano" title="Malaria - The Game" group="malaria" href="images/screens/MalariaScreen3.png"></a>
+						<h4  style="font-size:80%;">
+						<a href="http://atsosxdev.doit.wisc.edu/malaria">Malaria Game</a>*note this is an older prototype<br />
+						Malaria The game was a functioning prototype that will be used to teach nursing students about the effects and deterrents to catching Malaria.
+						</h4>
+					</div>
+
+					<div style="width:50%; float:left; padding-top: 20px;">
+						<a data-dojo-type="dojox.image.LightboxNano" title="VirtualCase - Moodle Module" group="vc" href="images/screens/VCscreen1.png">
+						<img src="images/screens/VCscreen1.png" alt="VC screenshot" width="100" height="55" style="border-style:none;"/><br/>
+						VirtualCase - Moodle Module</a>
+						<a data-dojo-type="dojox.image.LightboxNano" title="VirtualCase - Moodle Module" group="vc" href="images/screens/VCscreen2.png"></a>
+						<a data-dojo-type="dojox.image.LightboxNano" title="VirtualCase - Moodle Module" group="vc" href="images/screens/VCscreen3.png"></a>
+						<h4  style="font-size:80%;">
+						<a href="#">Private</a><br />
+						The VirtualCase Moodle module was built for the University of Wisconsin School of Pharmacy.  VirtualCase is a clinical environment simulation, it uses a dynamic branching tree to allow the student to traverse a decision making process. This module was written in PHP with some front end YUI JavaScript.
+						</h4> 
+					</div>
+                </div>
+                <div id="code" class="pane hide" >
+	                <h1>Code Samples</h1>
+	                <div>
+						<div id="btn1" class="resumeButton"><a href="#work" title="PHP">CRM-PHP</a></div>
+						<div id="btn2" class="resumeButton"><a href="#work" title="JS">CRM-JS</a></div>
+						<div id="btn3" class="resumeButton"><a href="#work" title="PY">Python</a></div>
+						<div id="btn4" class="resumeButton"><a href="#work" title="ROR">Ruby/RoR</a></div>
+					</div>
+					<div class="scroll" id="PHP">
+	                <code class="prettyprint">
+//function settradeaction is part of the DataController, every function in
+//DataController is either called via XHRPost or XHRGet, it is the
+//primary mechanism with which the front end javascript talks to the backend php
+public function settradeAction() {
+$this->_helper->layout()->disableLayout();
+$this->_helper->viewRenderer->setNoRender();
+
+if($this->getRequest()->isXmlHttpRequest()) {
+	$sessionId = $this->_namespace->sId;
+	$profileId = $this->_namespace->profileId;
+	$tradingDate = $this->_namespace->date;
+	$currentDate = time();
+	$realDate = $this->_namespace->vdList[$tradingDate];
+	$formData = $this->getRequest()->getPost();
+	$json = stripslashes($formData['data']);
+	$dojoData = new Zend_Dojo_data();
+	$dojoData->fromJson($json);
+	$trade = new Model_Trade();
+
+	foreach ($dojoData as $item) {
+	//echo $item['title'] . ': ' . $item['description'] . "\n";
+		$long = $item['longForm'];
+		$short = (0-$item['shortForm']);
+		$margin = $item['marginReq'];
+		$monthId = $item['month'];
+		$price = $item['price'];
+		$commodityId = $item['commodityId'];
+		$quantity = $long + $short;
+		if((abs($margin) >0 || $monthId == 13)
+		&& abs($price) >0 && $quantity != 0) {
+		//then a trade needs to be processed
+			$trade->saveTrade((int)$sessionId,
+				(int)$commodityId,
+				(int)$monthId,
+				(int)$realdate,
+				(int)$tradingDate,
+				(int)$quantity,
+				$price,$margin, $profileId);
+		}
+	}
+	$rules = Model_ProfileRulesFactory::Create($profileId, $sessionId, $tradingDate,$realDate);
+	$rules->lastCall();
+	...
+	return "sucess";
+}
+}
+/////////////////////////////////////
+//end of controller example//////////
+/////////////////////////////////////
+
+//saveTrade is part of the trade model
+public function saveTrade($sessionId,$commodityId,$monthId,$realDate,
+$tradingDate,$quantity,$price,$margin,$profileId) {
+//function saveTrade saves an user input trade
+//(buy or sell, long or short - or cash trade) and updates all related records
+// saves to assets, marginaccount, moneymarketaccount, orders, transactions
+// saves to financialtransfer and transactionlog
+
+//need to check if player has enough money to do this trade
+	$rules = Model_ProfileRulesFactory::Create($profileId, $sessionId, $tradingDate,$realDate);
+	$yay = $rules->saveTrade($commodityId,$monthId,$quantity);
+	if($yay) {
+		$log = new Model_TransactionLog();
+		if($quantity > 0) {
+			$log->saveLog($commodityId, $monthId, $price, self::B, $quantity, $tradingDate, $sessionId);
+		}
+		else {
+			$log->saveLog($commodityId, $monthId, $price, self::S, $quantity, $tradingDate, $sessionId);
+		}
+		$transaction = new Model_Transactions();
+		$transfer = new Model_FinancialTransfer();
+		//so we need to retrieve the list of current assets, and then
+		//determine which to buy and sell based off of transaction date
+		//update priceOut, quantity, and margin
+		$commodity = new Model_Commodities();
+		$commodity->find($commodityId);
+		$brokerFee = $commodity->getBrokerFee();
+
+			//inventory gets handled in the profilerules
+
+	/***Save Assets data **/
+		$contractSize = $commodity->getContractSize();
+		$marginReq = $commodity->getMargin();
+		$assets = $transaction->getPositionsByCommodity($sessionId, $commodityId,$monthId);
+
+		$totalReturn = 0;
+		//need to iterate through current assets of same commodity, month to alter position
+
+		foreach($assets as $transaction) {//asset is a model_transaction object
+			$oldQuantity = $transaction->getQuantity();
+			if(($oldQuantity < 0 && $quantity < 0) || ($oldQuantity > 0 && $quantity > 0)) {
+			//just add a new record, not an offset
+				$newTrans = new Model_Transactions();
+				$newTrans->setMonthId($monthId);
+				$newTrans->setCommodityId($commodityId);
+				$newTrans->setPriceIn($price);
+				$newTrans->setQuantity($quantity);
+				$newTrans->setTransactionDate($tradingDate);
+				$newTrans->setSessionId($sessionId);
+				$newTrans->setMargin($margin);
+				$newTrans->save();
+
+				$fee = $quantity * ($brokerFee/2) * -1;
+		        //divided in half because the other half will be taken out when the position is offset
+
+				$transfer->saveMoneyMarket($fee, $sessionId, self::BROKER_FEE, $tradingDate);
+				$transfer->saveMoneyMarket((0-$margin), $sessionId, self::MARGIN_REQ, $tradingDate);
+		        //increasing the margin requirements
+				$transfer->saveMarginAccount($margin, $sessionId, self::FROM_MM, $tradingDate);
+				$quantity = 0;
+				$totalReturn = 0;
+				break;
+			}
+		...
+	}
+}
+	                </code>
+	                </div>
+	                <div class="scroll hide" id="JS">
+		                <code class="prettyprint">
+//This is a chunk of code that is called on each row of the pending grid.
+//I needed a more powerful way of manipulating the data shown beyond normal formatter functions
+dojo.declare("dojox.grid.formatterScopeObj", null, {
+	store: null,
+	margins: {},
+	totalMargin: 0,
+	constructor: function(kwArgs){
+
+		this.store = kwArgs.store;
+		//this.margins = [];
+		this.totalMargin = 0;
+	},
+	fmtBuySell: function(item) {
+		var long1 = store.getValue(item,"longForm");
+		var short1 = store.getValue(item,"shortForm");
+		var val = long1 - short1;
+		if(val > 0) {
+			return "B";
+		}
+		else {
+			return "S";
+		}
+	},
+	determinePosition: function(pendingItem,pendingMargin){
+		var identity = this.store.getIdentity(pendingItem);
+		var pendingPosition = this.fmtBuySell(pendingItem);//should be a B or S
+
+		var gotItem = function(item)
+		{
+			if(item == null)
+			{
+				return;
+			}
+			var position = positionStore.getValue(item,"position");
+
+			if(position == "Long" && pendingPosition == "S" || position == "Short" && pendingPosition == "B")
+			{
+				pendingMargin *= -1;//as in a reduction in margin
+			}
+		};
+		positionStore.fetchItemByIdentity({identity: identity, onItem: gotItem});
+		return pendingMargin;
+	},
+	updateMarginTotal: function(margin) {
+
+		if(typeof(margin)!== 'undefined')
+		{
+			this.totalMargin = margin;
+		}
+		var total = "Margin Change: " + dojo.currency.format(this.totalMargin, {currency: "USD"});
+		dijit.byId("marginTotal").set("content",total);
+	},
+	fmtMargin: function(item){
+
+		var identity = this.store.getIdentity(item);
+		var margin = 0;
+		var long1 = this.store.getValue(item,"longForm");
+		var short1 = 0;
+		short1 -= this.store.getValue(item,"shortForm");
+		var amount = short1 + long1;
+		if(!this.margins[identity]){
+			margin = this.store.getValue(item, "margin");
+			var marginReq = margin * Math.abs(amount);
+			if(amount != 0)
+			{
+				this.margins[identity] = amount;
+				marginReq = this.determinePosition(item,marginReq);
+			}
+			this.store.setValue(item, "marginReq", marginReq);
+			this.totalMargin +=marginReq;
+			this.updateMarginTotal();
+		}
+		else
+		{
+			if(this.margins[identity]==amount)
+			{//nothing changed
+				margin = this.store.getValue(item,'marginReq');
+			}
+			else
+			{//something has changed, need to rerun calculations
+				var margin = this.store.getValue(item,"marginReq");
+
+				margin2 = this.totalMargin - margin;
+
+				this.updateMarginTotal(margin2);
+				delete this.margins[identity];
+
+				this.fmtMargin(item);
+			}
+
+		}
+		return dojo.currency.format(margin, {currency: "USD"});
+	},
+	fmtCommodity: function(item)
+	{
+		if(this.store !== store)
+		{
+			console.log("stores do not match!  ");
+		}
+		var long1 = this.store.getValue(item,"longForm");
+		var short1 = 0;
+		short1 -= this.store.getValue(item,"shortForm");
+		var commodity = this.store.getValue(item,"commodity");
+
+		var month = this.store.getValue(item,"monthName");
+		if(month != "Cash"){
+			month = month.substring(0,3);
+		}
+		var amount = short1 + long1;
+		return amount + " " + month + " " + commodity;
+	},
+	fmtItem: function(value, idx){
+		if(!this.store.isItem(value)){
+			return "&nbsp;";
+		}
+
+	}
+});
+
+....
+
+var pendingLayout = [{field:"_item",formatter: "fmtBuySell", width:"10%",name: "B/S"},
+		{field:"_item",formatter: "fmtCommodity", width:"10%",name: "Commodity"},
+		{field:"_item",formatter: "fmtMargin", width:"10%",name: "Margin"}
+	];
+
+var formatObj = new dojox.grid.formatterScopeObj({store:store});
+ pendingGrid = new dojox.grid.DataGrid({selectionMode:"none",formatterScope: formatObj,query:"{!(shortForm:0 AND longForm:0) AND !price:0}", style:"height: 300px; width: 100%;", store:store,escapeHTMLInData:"false",id:"pendGrid",structure:pendingLayout},pos3);
+dijit.byId("pendingGridPane").set("content",pendingGrid);
+pendingGrid.startup();
+			            </code>
+	                </div>
+	                <div class="scroll hide" id="ROR">
+		                <code class="prettyprint">
+#this is a test RoR app that uses the djatoka gem for the djatoka image viewer
+
+class DjatokaController < ApplicationController
+  def index
+	@formats = [['image/jpeg','image/jpeg'],['image/gif','image/gif'],['image/png','image/png'],['image/jp2','image/jp2'],['image/pnm','image/prm'],['image/tiff','image/tiff'],['image/bmp','image/bmp']]
+	@rotates = [['None','0'],['90','90'],['180','180'],['270','270']]
+	@levels = [[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10],['MAX','MAX']]
+	@tags = [['djatoka_smallbox_image_tag','djatoka_smallbox_image_tag'],
+			['djatoka_bottom_right_square_image_tag','djatoka_bottom_right_square_image_tag'],
+			['djatoka_top_left_square_image_tag','djatoka_top_left_square_image_tag'],
+			['djatoka_square_image_tag','djatoka_square_image_tag'],
+			['djatoka_image_tag','djatoka_image_tag']]
+	if !params[:resolver]
+	  @default_pid = '1711.dl:2HZ3TEVNP3UA786'
+	  @rftid = 'http://memory.loc.gov/gmd/gmd433/g4330/g4330/np000066.jp2' #default image
+	  @resolver = 'http://depot-test.library.wisc.edu/adore-djatoka/resolver' #default server
+	  @format = 'image/jpeg' #default image format
+	  @rotate = 0 #rotate works in 90 degree increments
+	  @level = 1 # 1-10 or "MAX"
+	  @region = "" #four numbers delimited by commas, no spaces
+	  @region1 = 0
+	  @region2 = 0
+	  @region3 = 0
+	  @region4 = 0
+	  @scale = 75 #as a default, it scales the height of the image to the value provided
+	  @clevel = 0 #don't think this works, may need some certain type of jp2 image that has "layers"
+	  @tag = "djatoka_image_tag"
+	else
+	  @rftid = params[:rftid]
+	  @pid =  @rftid.match('1711.dl(%3A|:)[^/]+') ? @rftid.match('1711.dl(%3A|:)[^/]+')[0] : nil
+	  @rftid = "http://depot-test.library.wisc.edu/repository/fedora/#{@pid}/datastreams/JP2/content" if @pid
+	  @resolver = params[:resolver]
+	  @format = params[:format]
+	  @rotate = params[:rotate]
+	  @level = params[:level]
+	  @region1 = params[:region1]
+	  @region2 = params[:region2]
+	  @region3 = params[:region3]
+	  @region4 = params[:region4]
+	  @scale = params[:scale]
+	  #@clevel = params[:clevel]
+	  @tag = params[:tag]
+#      if(location.href.match('1711.dl(%3A|:)[^/]+'))
+ #            @titleUrl = 'http://' + host + '/fedora/objects/' + pid + '/methods/1711.dl:SDefineUWDCObject/getTitle';
+  #        else
+   #          @titleUrl = 'http://' + host + '/title/' + pid;
+
+	  if @region3 != "0" && @region4 != "0"
+		@region = "#{@region1},#{@region2},#{@region3},#{@region4}"
+	  end #if
+	end #if
+  end #index
+
+end #class
+
+#End of controller
+#Start of view
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+	&lt;title&gt;Djatoka Gem Test App&lt;/title&gt;
+	&lt;%= csrf_meta_tag %&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+	&lt;h1&gt;Test us out some djatoka&lt;/h1&gt;
+	&lt;div id=&quot;container1&quot; style=&quot;width:100%;&quot;
+		&lt;div id=&quot;image&quot; style=&quot;width:50%;float:left;border: 1px;&quot;&gt;
+			<%
+				# Available helpers:
+				# djatoka_smallbox_image_tag ( rft_id,params {}) params can be both djatoka query and image tag parameters
+				# djatoka_bottom_right_square_image_tag ()
+				# djatoka_top_left_square_image_tag ()
+				# djatoka_square_image_tag ()
+				# djatoka_image_tag ()
+				#with available parameters being: 	:scale, :class, :resolver, :format, :rotate, :clayer(doesn't work?), :region, :level
+			%>
+			<% if !@scale.nil? %>
+				<%= send(@tag.to_sym, @rftid, :scale => @scale,
+					:class => 'djatoka_image',
+					:alt => 'djatoka supplied image',
+					:id => 'djatokaImage',
+					:resolver => @resolver,
+					:format => @format,
+					:rotate => @rotate )%>
+			<% else %>
+					<%= send(@tag.to_sym, @rftid,
+						:class => 'djatoka_image',
+						:alt => 'djatoka supplied image',
+						:id => 'djatokaImage',
+						:resolver => @resolver,
+						:format => @format,
+						:rotate => @rotate )%>
+			<% end %>
+			<br>
+			URL: <%= @resolver %>?url_ver=Z39.88-2004
+			<br>
+			&svc_id=info:lanl-repo/svc/getRegion
+			<br>
+			&svc_val_fmt=info:ofi/fmt:kev:mtx:jpeg2000
+			<br>
+			&rft_id=<%= @rftid %>
+			<br>
+			&svc.scale=<%= @scale %>
+			<br>
+			&svc.format=<%= @format %>
+			<br>
+			&svc.rotate=<%= @rotate %>
+			<br>
+			&svc.level=<%= @level %>
+			<br>
+			&svc.region=<%= @region %>
+		&lt;/div&gt;
+		&lt;div id=&quot;form&quot; style=&quot;width:50%;float:right;&quot;&gt;
+			&lt;h1&gt;Configure Image&lt;/h1&gt;
+			<%= form_tag :action =>'index', :id => 'djatokaForm' %>
+				<%= label_tag 'rftid' %>
+				<%= text_field_tag 'rftid', @rftid, "size" => 75 %>
+				<br>
+				<%= label_tag 'resolver' %>
+				<%= text_field_tag 'resolver', @resolver, "size" => 75 %>
+				<br>
+				<%= label_tag 'scale' %>
+				<%= text_field_tag 'scale', @scale, "size" => 20 %>
+				<br>
+				<%= label_tag 'format' %>
+				<%= select_tag 'format', options_for_select(@formats, @format) %>
+				<br>
+				<%= label_tag 'rotate' %>
+				<%= select_tag 'rotate', options_for_select(@rotates,@rotate) %>
+				<br>
+				<%= label_tag 'level' %>
+				<%= number_field_tag 'level', @level, :in => 1...10 %>
+				<br>
+				<%= label_tag 'region' %>
+				<%= number_field_tag 'region1', @region1 %>
+				<%= number_field_tag 'region2', @region2 %>
+				<%= number_field_tag 'region3', @region3 %>
+				<%= number_field_tag 'region4', @region4 %>
+				<br>
+				<%= label_tag 'Image Tag Format' %>
+				<%= select_tag 'tag', options_for_select(@tags,@tag) %>
+				<br>
+				<%= submit_tag 'Load' %>
+		                </code>
+	                </div>
+	                <div class="scroll hide" id="PY">
+		                <code class="prettyprint">
+#Quick load testing python script
+#load tests a RoR app loading Jp2 images from the djatoka image server
+
+from net.grinder.plugin.http import HTTPRequest
+from net.grinder.script.Grinder import grinder
+from net.grinder.script import Test
+
+import os
+#
+# tag initialization of this module
+
+grinder.logger.output( '[ test_runner.py ]' )
+
+#
+# initialize data sources for tests
+
+data_dir = './data'
+imgpids = open( ( '%s/imgpids.txt' % data_dir ), 'r' ).readlines()
+#ipidx = 0
+
+#
+# define base test runner to be subclassed by all actual tests
+
+class TestRunner:
+
+	def __init__( self ):
+
+	# initialize base parameters
+
+		self.site_url = 'http://%s' % os.environ['SERVICE_NAME']
+		self.url = '%s' % os.environ['URL']
+		self.scale = '%s' % os.environ['SCALE']
+		self.tag = '%s' % os.environ['IMAGE_TAG']
+		self.rotate = '%s' % os.environ['ROTATE']
+		self.format = '%s' % os.environ['FORMAT']
+		self.test = Test( 1, 'djatoka-image-basic' )
+		self.req = self.test.wrap( HTTPRequest() )
+		self.rsp = None
+		self.ipidx = 0
+
+		return
+
+	def __call__( self ):
+
+
+	# run a query and report result only if verified
+
+		grinder.statistics.delayReports = 1
+		self.rsp = self.req.GET( self.test_query() )
+		if self.rsp.statusCode == 200:
+			grinder.statistics.forLastTest.setSuccess( 1 )
+		else:
+			print self.rsp.statusCode
+
+		return
+
+	def next_pid( self ):
+		pid = imgpids[self.ipidx].rstrip( '\n' )
+		self.ipidx = self.ipidx + 1
+		return pid
+
+	def test_query( self ):
+		#new url is http://depot-test.library.wisc.edu/TIRIS/content/reference/*.jp2
+		#http://depot-test.library.wisc.edu/adore-djatoka/resolver?url_ver=Z39.88-2004&rft_id=http://depot-test.library.wisc.edu/TIRIS/content/reference/1984.01.001.01.jp2&svc_id=info:lanl-repo/svc/getRegion
+		url = '%s/%s/&rft_id=%s&svc.scale=%s&svc.format=%s&svc.rotate=%s' % ( self.site_url, self.url, self.next_pid(),self.scale,self.format,self.rotate )
+		grinder.logger.output( url )
+		return url
+		                </code>
+	                </div>
+                </div>
+                <div id="technologies" class="pane hide" >
+	                <h1>Technology list </h1>
+	                <div style="float:left; width:100%; position:relative;">
+						<div style="float:left;position:relative;overflow: hidden;width:30%">
+							<h2>Languages</h2>
+                            <ul>
+                            <li>
+	                        Javascript (Dojo, YUI, jquery)<br />
+                            PHP<br />
+                            Ruby<br />
+                            Python<br />
+                            Perl<br />
+                            Java<br />
+                            ColdFusion<br />
+                            PL/SQL<br />
+                            C++<br />
+                            </li>
+	                        </ul>
+						</div>
+		                <div style="float:left;position:relative;overflow: hidden;width:30%">
+			                  <h2>Databases</h2>
+			                <ul>
+				            <li>
+                            mysql <br>
+					        sql server <br>
+					        oracle<br>
+					        db2<br>
+					        hsqldb <br />
+	                        </li>
+							<h2>Servers</h2>
+			                 <li>
+	                            Apache<br>
+				                 Node<br>
+				                 Tomcat<br>
+				                 Jetty<br>
+				                 IIS</li>
+				              </ul>
+		                </div>
+		                <div style="float:left;position:relative;overflow: hidden;width:30%">
+			                <h2>Frameworks</h2>
+			                <ul>
+				                <li>ZendFramework<br>
+					            Rails<br>
+					            CodeIgnitor</li>
+                            <li>Moodle<br>
+	                            Drupal<br>
+	                            WordPress<br>
+	                            SugarCRM</li>
+                            <h2>VCS</h2>
+				                <li>SVN<br>
+					            CVS<br>
+					            Git</li>
+                            </ul>
+		                </div>
+	                </div>
+                </div>
+				<div class="pane hide" id="timeline">
+					<h2>Work Experience</h2>
+                      <div id="resume" class="resume">
+                        <div id="jobs" class="secret" >
+                            <div class="jobsContainer">
+								<div id="10" class="expr" >
+									<h3>May 2011-Present</h3>
+									<h3>SitePen, Inc.</h3>
+									<b>Software Engineer</b><br/>
+									<ul>
+										<li>Develop and support enterprise level web apps with Dojo</li>
+										<li>Write and update Dojo documentation</li>
+										<li>Write and update Dojo tutorials</li>
+										<li>Contribute to dgrid, part of the Dojo Foundation</li>
+										<li>Develop and maintain internal business applications</li>
+									</ul>
+								</div>
+								<div id="9" class="expr hide" >
+								<h3>Sept 2008-May 2011</h3>
+									<h3>University of Wisconsin-Madison
+										Madison, WI<br/>
+										DoIT – Academic Technology</h3>
+										<b>Academic Technology Developer</b><br/>
+										<h4><b>Learning Solutions</b></h4>
+										<ul>
+										 <li>Green dollar unit</li>
+										 <li>Multiple projects of $50k - $100k each</li>
+										 <li>Malaria: the game. PHP/mysql</li>
+										 <li>VirtualCase – A Moodle module that simulates a
+											clinical environment. PHP/mysql with YUI elements</li>
+										  <li>Commodities Risk Management – a simulation of the
+											commodities market. ZF/mysql/Dojo</li>
+										</ul>
+
+										<h4><b>Shared Development Group</b></h4>
+										<ul>
+											<li>Loaned for six months to SDG</li>
+											<li>Worked on Ruby, Python, and Java apps</li>
+											<li>Optimized Tomcat instance for Djatoka Image Server</li>
+										</ul>
+								 </div>
+								 <div id="6.7"  class="expr hide">
+									<h3>Jan 2007-Sept 2008 </h3>
+									<h3>University of Wisconsin-Madison
+										Health Services <br/>Madison, WI</h3>
+
+										<b>Web Developer</b>
+										<ul>
+											<li>Supported SHIP (Student Health Insurance Program) Online</li>
+											<li>Develop enhancements and debug using JSP and Java</li>
+											<li>Oracle back-end</li>
+											<li>Integrated Crystal Reports 10 report interface</li>
+											<li>Research and advise on future web technology trends</li>
+											<li>Business analysis and development in ColdFusion 8 for an internal Web App.</li>
+											<li>Database design in MySql 5</li>
+											<li>Future planning for development of new web portal</li>
+										</ul>
+								</div>
+								<div id="5"  class="expr hide" >
+									<h3>Feb 2006 –Jan 2007</h3>
+									<h3>dChron, inc.<br />
+									Burlington, WI</h3>
+									<b>Java Developer</b>
+									<ul>
+										<li>Involved in all aspects of the development life cycle for dChron’s
+											dComm (data communication software).</li>
+										<li>Developed in Java, using Eclipse’s SDK</li>
+										<li>Developed both www.dchron.com and www.timetrakmidwest.com</li>
+										<li>Database experience with Hypersonic DB</li>
+								  </ul>
+								</div>
+								<div id="4.1"  class="expr hide">
+									<h3>May 2004 – Feb 2006</h3>
+									<h3>Northwestern Mutual<br />
+									Milwaukee, WI</h3>
+									<b>Systems Specialist</b>
+									<ul>
+										<li>Certification in Oracle’s PL/SQL, 9i, 10g</li>
+										<li>Supported the largest and most complex system at Northwestern Mutual</li>
+										<li>Debugged extensively in both Oracle and VB</li>
+										<li>Worked on many small projects from design to implementation and support</li>
+										<li>Supported nightly processing</li>
+										<li>Primary contact between our team and business clients</li>
+										<li>Supported Actuate reports and processing for the system</li>
+								  </ul>
+								</div>
+								<div id="2.5"  class="expr hide">
+									<h3>Fall 2003</h3>
+									<h3>Earthly Elements<br />
+									Madison, WI</h3>
+									<b>Web Site Developer</b>
+									<ul>
+										<li>Contracted through Earthly Elements to develop website</li>
+										<li>Used Html, Macromedia’s Flash, and JavaScript.</li>
+										<li>Was posted at www.earthlyelements.com</li>
+									</ul>
+								</div>
+								<div id="1.8"  class="expr hide" >
+									<h3>Spring 2003</h3>
+									<h3>Western Racine County Health Department<br />
+									Burlington, WI</h3>
+									<b>Web Site Developer</b>
+									<ul>
+										<li>Contracted through Aurora Healthcare to create a website for the
+											health department.</li>
+										<li>Used Html, Macromedia’s Flash, and JavaScript</li>
+										<li>Posted at http://www.wrchd.org (not responsible for current design
+										theme)</li>
+									</ul>
+								</div>
+								<div id="1"  class="expr hide" >
+									<h3>2002</h3>
+									<h3>Runzheimer Int’l<br  />
+									Rochester, WI</h3>
+									<b>Information Technology Intern</b>
+									<ul>
+										<li>Duties included web-based application design and implementation
+											using ASP. Used Microsoft’s SQL Server.</li>
+										<li>Created procedures using SQL to move data from Excel and Access
+											to the mainframe using COBOL.</li>
+									</ul>
+								</div>
+								</div> <!-- end jobscontainer -->
+                                <div id="jobTimeline" class="timeline"></div>
+                                <div style="position:relative; width:100%; text-align:center; ">
+                                	(click on the timeline to view my past work experience)
+                                </div>
+                        </div><!-- end of jobs sections -->
+                      </div>  <!-- end resume -->
+				</div>
+				<div class="pane" id="blog">
+					<h2>My blog</h2>
+					<div class="posts">
+						<div class="post">
+							<div class="date">
+								<span class="day">10</span>
+								<span class="month">February 2012</span>
+							</div>
+							<div class="summary">
+								<h3><a href="blog/2012/2/top-bar-animation.html">Top bar menu animation</a></h3>
+								<p>Coming Soon!</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="post">
+							<div class="date">
+								<span class="day">26</span>
+								<span class="month">January 2012</span>
+							</div>
+							<div class="summary">
+								<h3><a href="blog/2012/1/dojo-charting-timeline.html">How-to: Work experience timeline</a></h3>
+								<p>Creating a work experience timeline with Dojox Charting!</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="post">
+							<div class="date">
+								<span class="day">14</span>
+								<span class="month">December 2011</span>
+							</div>
+							<div class="summary">
+								<h3><a href="blog/2011/12/web-5-conf.html">Presenting at web-5 conf!</a></h3>
+								<p>I'll be presenting on two topics at the Web-5 conf in Beziers, France in April!</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="pane last">
+					<h2>Get in touch</h2>
+					<div class="contact-intro">
+						<p>Please fill out the form on the right to contact me, alternatively you can drop me an email <a href="mailto:chris@christopherbarrett.name">chris@christopherbarrett.name</a></p>
+						<p>I am always open to discuss interesting opportunities.</p>
+						<p class="cv-link"><a href="files/ChrisBarrettResume_nocl.pdf" class="highlight-button"><span>Download my resume</span></a></p>
+					</div>
+					<div class="contact-form">
+						<form name="contactForm" action="sendmail.php" method="post">
+							<div class="form-container">
+								<div class="form-row ">
+									<label for="name">Your name</label>
+									<input type="text" class="std" name="name" placeholder="Your name" value="">
+								</div>
+								<div class="form-row ">
+									<label for="email">Your email</label>
+									<input type="text" class="std" name="email" placeholder="Your email" value="">
+								</div>
+								<div class="form-row text-area ">
+									<label for="subject">Your message</label>
+									<textarea name="message" placeholder="Your message" rows="7"></textarea>
+								</div>
+								<div class="submit-row">
+									<input class="highlight-button" type="submit" id="submit" name="submit" value="Send Message">
+								</div>
+							</div>
+							<div id="response"></div>
+						</form>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+					<div id="contact" name="contact"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p class="copyright">© 2012 <a href="http://christopherbarrett.name/">Christopher Barrett</a></p>
+		<ul id="links">
+			<li><a href="http://github.com/thegoldentoilet"><img src="images/github.png" alt="Chris' github account"></a>
+			</li>
+			<li><a href="http://twitter.com/thegoldentoilet"><img src="images/twitter.png" alt="Chris' twitter account"></a></li>
+			<li><a href="http://www.linkedin.com/profile/view?id=98179637"><img src="images/linkedin.gif" alt="Chris Barrett on linkedIn"></a>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="js/prettify/prettify.js"></script>
+	<script src="js/modernizr-1.6.min.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/resume.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.7.2/dojo/dojo.js" data-dojo-config="isDebug: true, async: true"></script>
+	<!-- <script src="http://localhost/dojo.local/dojo/dojo.js" data-dojo-config="isDebug: true, async: true"></script> -->
+	<script>
+			require(["dojo/dom-class", "dojo/on", "dojo/dom", "dojox/charting/Chart", "dojox/charting/action2d/Tooltip","dojox/image/LightboxNano",
+				"dojox/charting/plot2d/Bars","dojox/charting/axis2d/Default","dojox/charting/themes/Claro", "dojo/query","dojo/parser","dojo/_base/event",
+				"dojo/_base/xhr","dojo/domReady!"],
+					function(domClass, on, dom, Chart, Tooltip, Lightbox, plot, Default, theme, query, parser, event, xhr) {
+				currentDiv = dom.byId("workPane");//global
+				currentCode = dom.byId("PHP");
+				scrollListen(domClass, on, dom);
+				clickListen(domClass, on, dom, Chart, theme, Tooltip, query, Default);
+				parser.parse();
+				
+				on(dom.byId('submit'), 'click', function(evt){
+					event.stop(evt);
+					xhr.post({
+					  form: 'contactForm',
+					  handleAs: 'json',
+					  load: function(data) {
+						  console.log(data);
+						var success = data.success;
+						var msg = data.message;
+						dom.byId('response').innerHTML = msg;
+					  },
+					  error: function(error) {
+						console.log(error);
+					  }
+					}) // xhrPost()
+			  }); // connect()
+			});
+	</script>
+</body>
+</html>
