@@ -10,6 +10,7 @@
 
 #nav-header > .wrap {
   height: 2em;
+	width: 100%;
   position: relative;
 }
 
@@ -41,12 +42,13 @@
   z-index: 100;
 }
 
-.no-anim #header-nav-float {
+.dj_ie #header-nav-float {
   transition: none;
   -moz-transition: none;
   -o-transition: none;
   -webkit-transition: none;
 }
+
 
 .header-nav-floating #header-nav-float {
   box-shadow: 0 0.1em 1em rgba(0,0,0, 0.3);
@@ -97,7 +99,7 @@
   margin-top: -0.05em;
 }
 
-.no-anim #header-nav {
+.dj_ie #header-nav {
   transition: none;
   -moz-transition: none;
   -o-transition: none;
@@ -153,11 +155,12 @@
   z-index: 101;
 }
 
-.no-anim #work-nav-float {
+.dj_ie #work-nav-float {
   transition: none;
   -moz-transition: none;
   -o-transition: none;
   -webkit-transition: none;
+	top: -3em;
 }
 
 .work-nav-floating {

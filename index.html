@@ -7,7 +7,7 @@
 		
 		<meta name="author" content="Chris Barrett">
 		<meta name="description" content="Christopher Barrett - Javascript, Dojo, PHP and more!">
-		<meta name="keywords" content="christopher barrett, ruby on rails, php, web developer">
+		<meta name="keywords" content="christopher barrett, dojo, javasript, JavaScript, ruby on rails, php, web developer">
 		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
 		<link href="css/prettify.css" media="screen" type="text/css" rel="stylesheet" />
 
@@ -15,12 +15,14 @@
 		<link href="css/master.css" media="screen" rel="stylesheet" type="text/css">
 		<link href="css/nav.css" media="screen" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/dojo/1.7.2/dijit/themes/claro/claro.css" media="screen">
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 	</head>
 
 	<body class="claro" onload="prettyPrint()">
 	<a id="top" href="#top"></a>
-	<div id="container">
-		<div id="nav-header" class="header-cntnr">
+	<div id="nav-header" class="header-cntnr">
 			<div class="header-wrap wrap">
 		        <header>
 					<div id="header-nav-placeholder"></div>
@@ -50,6 +52,8 @@
 		        </header>
 		    </div>
 		</div>
+	<div id="container">
+
 		<div id="header">
 			<br><h1><a href="http://www.christopherbarrett.name/" title="Christopher Barrett - JavaScript, Dojo, PHP and more!">Christopher Barrett</a></h1>
 		</div>
@@ -74,7 +78,7 @@
 						click "Work Timeline" up above. </p>
 					</div>
 					<div class="work-panel">
-						<div class="work-images" style="position: relative;">
+						<div class="work-images">
 							<img src="images/me.jpg" alt="Chris Barrett" />
 						</div>
 					</div>
@@ -138,6 +142,7 @@
 						<div id="btn3" class="resumeButton"><a href="#work" title="PY">Python</a></div>
 						<div id="btn4" class="resumeButton"><a href="#work" title="ROR">Ruby/RoR</a></div>
 					</div>
+	                <div id="IE7_warning">Apparently prettifier doesn't like IE7, sorry!</div>
 					<div class="scroll" id="PHP">
 	                <code class="prettyprint">
 //function settradeaction is part of the DataController, every function in
@@ -883,7 +888,7 @@ class TestRunner:
 		</ul>
 	</div>
 	<script type="text/javascript" src="js/prettify/prettify.js"></script>
-	<script src="js/modernizr-1.6.min.js"></script>
+	<!-- <script src="js/modernizr-1.6.min.js"></script> -->
 	<script src="js/header.js"></script>
 	<script src="js/resume.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.7.2/dojo/dojo.js" data-dojo-config="isDebug: true, async: true"></script>
@@ -891,7 +896,7 @@ class TestRunner:
 	<script>
 			require(["dojo/dom-class", "dojo/on", "dojo/dom", "dojox/charting/Chart", "dojox/charting/action2d/Tooltip","dojox/image/LightboxNano",
 				"dojox/charting/plot2d/Bars","dojox/charting/axis2d/Default","dojox/charting/themes/Claro", "dojo/query","dojo/parser","dojo/_base/event",
-				"dojo/_base/xhr","dojo/domReady!"],
+				"dojo/_base/xhr", "dojo/uacss","dojo/domReady!"],
 					function(domClass, on, dom, Chart, Tooltip, Lightbox, plot, Default, theme, query, parser, event, xhr) {
 				currentDiv = dom.byId("workPane");//global
 				currentCode = dom.byId("PHP");

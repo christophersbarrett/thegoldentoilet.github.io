@@ -76,6 +76,7 @@ a.highlight-button-circle:hover {
 div#container { 
   width: 900px; 
   margin: 0px auto;
+	z-index: 1;
 }
 
 
@@ -121,7 +122,7 @@ div.pane {
 div.content-pane div.pane {
 	border-bottom:4px solid #e1e0e0;
 	margin-bottom:60px;
-	position: relative;
+	
 	height: 700px;
 }
 
@@ -145,6 +146,7 @@ div.home div#intro-holder {
 	padding:0 0 0 270px;
 	height:130px;
 	margin-left: -30px;
+	width: 100%;
 }
 
 div#top-intro p {
@@ -511,7 +513,13 @@ div.post-intro div.intro-content div.details {
 
 /* Work Panel
 ----------------------------*/
+#IE7_warning{
+	display:none;
+}
 
+.dj_ie7 #IE7_warning {
+	display: block;
+}
 div.portfolio-panels {
 	
 }
