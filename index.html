@@ -676,6 +676,10 @@ class TestRunner:
 					<h2>Work Experience</h2>
                       <div id="resume" class="resume">
                         <div id="jobs" class="secret" >
+	                          <div id="jobTimeline" class="timeline"></div>
+                                <div style="position:relative; width:100%; text-align:center; ">
+                                	(click on the timeline to view my past work experience)
+                                </div>
                             <div class="jobsContainer">
 								<div id="10" class="expr" >
 									<h3>May 2011-Present</h3>
@@ -795,10 +799,7 @@ class TestRunner:
 									</ul>
 								</div>
 								</div> <!-- end jobscontainer -->
-                                <div id="jobTimeline" class="timeline"></div>
-                                <div style="position:relative; width:100%; text-align:center; ">
-                                	(click on the timeline to view my past work experience)
-                                </div>
+
                         </div><!-- end of jobs sections -->
                       </div>  <!-- end resume -->
 				</div>
@@ -891,8 +892,8 @@ class TestRunner:
 	<!-- <script src="js/modernizr-1.6.min.js"></script> -->
 	<script src="js/header.js"></script>
 	<script src="js/resume.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.7.2/dojo/dojo.js" data-dojo-config="isDebug: true, async: true"></script>
-	<!-- <script src="http://localhost/dojo.local/dojo/dojo.js" data-dojo-config="isDebug: true, async: true"></script> -->
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.7.2/dojo/dojo.js" data-dojo-config="isDebug: true, async: true"></script> -->
+	<script src="dojo/dojo/dojo.js" data-dojo-config="isDebug: true, async: true"></script>
 	<script>
 			require(["dojo/dom-class", "dojo/on", "dojo/dom", "dojox/charting/Chart", "dojox/charting/action2d/Tooltip","dojox/image/LightboxNano",
 				"dojox/charting/plot2d/Bars","dojox/charting/axis2d/Default","dojox/charting/themes/Claro", "dojo/query","dojo/parser","dojo/_base/event",
