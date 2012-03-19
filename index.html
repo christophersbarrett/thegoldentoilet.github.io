@@ -849,7 +849,7 @@ class TestRunner:
 						<p class="cv-link"><a href="files/ChrisBarrettResume_nocl.pdf" class="highlight-button"><span>Download my resume</span></a></p>
 					</div>
 					<div class="contact-form">
-						<form name="contactForm" action="sendmail.php" method="post">
+						<form name="contactForm" id='contactForm' action="sendmail.php" method="post">
 							<div class="form-container">
 								<div class="form-row ">
 									<label for="name">Your name</label>
@@ -867,8 +867,8 @@ class TestRunner:
 									<input class="highlight-button" type="submit" id="submit" name="submit" value="Send Message">
 								</div>
 							</div>
-							<div id="response"></div>
 						</form>
+						<div id="response" style="padding-top:15px;"></div>
 						<div class="clear"></div>
 					</div>
 					<div class="clear"></div>
@@ -907,7 +907,7 @@ class TestRunner:
 				on(dom.byId('submit'), 'click', function(evt){
 					event.stop(evt);
 					xhr.post({
-					  form: 'contactForm',
+					  form: dom.byId('contactForm'),
 					  handleAs: 'json',
 					  load: function(data) {
 						  console.log(data);
@@ -916,7 +916,7 @@ class TestRunner:
 						dom.byId('response').innerHTML = msg;
 					  },
 					  error: function(error) {
-						console.log(error);
+						console.log("error: ", error);
 					  }
 					}) // xhrPost()
 			  }); // connect()
