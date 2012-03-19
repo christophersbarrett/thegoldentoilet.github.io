@@ -1,1 +1,0 @@
-define(["dijit/main"], function(main){return main;});
