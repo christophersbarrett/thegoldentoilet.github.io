@@ -7,7 +7,9 @@ html, body {
   color: #313131;
   font-size: 1em;
 }
-
+.specialk {
+	display:none;
+}
 a:link { color: #313131; }
 a:visited { color: #313131; }
 a:hover, 

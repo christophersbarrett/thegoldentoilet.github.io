@@ -7,6 +7,12 @@ if ($host != $matches[1]) {
 }
  $whom = $_POST["name"];
  $from = $_POST["email"];
+ $spam = $_POST["specialEmail"];
+
+ if($spam){
+		echo '{"success":"false", "message": "SCREW YOU SPAMMER!"}';
+		return;
+ }else {
 
  $subject = "Contact from ChrisBarrett.name " . $whom;
  $body = $_POST["message"] . "\n\n" . $from;
@@ -24,4 +30,5 @@ if ($host != $matches[1]) {
   {
   	echo '{"success":"false","message":"Message Fields Missing!"}';
   }
+}
  ?>
