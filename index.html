@@ -4,7 +4,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
 		<title>Christopher Barrett - JavaScript, Dojo, PHP and more!</title>
-		
+
 		<meta name="author" content="Chris Barrett">
 		<meta name="description" content="Christopher Barrett - Javascript, Dojo, PHP and more!">
 		<meta name="keywords" content="christopher barrett, dojo, javasript, JavaScript, ruby on rails, php, web developer">
@@ -98,7 +98,7 @@
 						The UI in this app is almost 100% javascript courtesy of the <a href="www.dojotoolkit.org" target="_blank">Dojo toolkit</a>.
 						</h4>
 					</div>
-					
+
 					<div style="width:50%; padding-top: 20px; float:left;">
 						<a data-dojo-type="dojox.image.LightboxNano" title="Birdie Publishing" href="images/screens/birdieScreen.png">
 						<img src="images/screens/birdieScreen.png" alt="birdie publishing screenshot"  width="100" height="55" style="border-style:none;"/><br/>
@@ -131,7 +131,7 @@
 						<h4  style="font-size:80%;">
 						<a href="#">Private</a><br />
 						The VirtualCase Moodle module was built for the University of Wisconsin School of Pharmacy.  VirtualCase is a clinical environment simulation, it uses a dynamic branching tree to allow the student to traverse a decision making process. This module was written in PHP with some front end YUI JavaScript.
-						</h4> 
+						</h4>
 					</div>
                 </div>
                 <div id="code" class="pane hide" >
@@ -897,7 +897,7 @@ class TestRunner:
 	<script src="js/header.js"></script>
 	<script src="js/resume.js"></script>
 	<!-- <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.7.2/dojo/dojo.js" data-dojo-config="isDebug: true, async: true"></script> -->
-	<script src="dojo/dojo/dojo.js" data-dojo-config="isDebug: true, async: true"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/dojo/1.9.3/dojo/dojo.js" data-dojo-config="isDebug: true, async: true"></script>
 	<script>
 			require(["dojo/dom-class", "dojo/on", "dojo/dom", "dojox/charting/Chart", "dojox/charting/action2d/Tooltip","dojox/image/LightboxNano",
 				"dojox/charting/plot2d/Bars","dojox/charting/axis2d/Default","dojox/charting/themes/Claro", "dojo/query","dojo/parser","dojo/_base/event",
@@ -908,7 +908,7 @@ class TestRunner:
 				scrollListen(domClass, on, dom);
 				clickListen(domClass, on, dom, Chart, theme, Tooltip, query, Default);
 				parser.parse();
-				
+
 				on(dom.byId('submit'), 'click', function(evt){
 					event.stop(evt);
 					xhr.post({
