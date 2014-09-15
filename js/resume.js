@@ -96,7 +96,7 @@ makeChart =  function(Chart, theme, Tooltip, Default, domClass) {
 						{value: 5, text: "2007"}, {value: 6, text: "2008"},
 						{value: 7, text: "2009"}, {value: 8, text: "2010"},
 						{value: 9, text: "2011"}, {value: 10, text: "2012"},
-						{value: 11, text: "2013"}, {value: 12, text: "2014"})
+						{value: 11, text: "2013"}, {value: 12, text: "2014"}
 					],
 					rotation: 45
 				}).
