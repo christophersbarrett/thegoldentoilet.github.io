@@ -1,9 +1,10 @@
 var chart = null;
-var currentJob = "10";
+var currentJob = "12";
 
 function clickListen(domClass, on, dom, Chart, theme, Tooltip, query, Default)
 {
 	on(dom.byId("atimeline"), "click", function(){
+		console.log('click');
 		domClass.toggle(dom.byId("timeline"), "hide");
 		domClass.toggle(currentDiv, "hide");
 		if(chart === null) {
@@ -132,8 +133,7 @@ makeChart =  function(Chart, theme, Tooltip, Default, domClass) {
 						shape.setFill(shape.originalFill);
 					}
 					else if(type == "onclick"){
-						 x = evt.x;
-						changeJob(x.toString(), domClass);
+						changeJob(evt.y.toString(), domClass);
 					 }
 				});
 };
@@ -143,6 +143,9 @@ changeJob = function(divJob, domClass) {
 	console.log("currentJob: ", currentJob);
 	console.log("divJob: ", divJob);
 	domClass.toggle(currentJob, "hide");
+	console.log('1', divJob, domClass);
+
     domClass.toggle(divJob, "hide");
+    console.log('2');
     currentJob = divJob;
 };
