@@ -114,7 +114,7 @@ makeChart =  function(Chart, theme, Tooltip, Default, domClass) {
 				addSeries("Series G", [9]).
 			    addSeries("Series H", [10]).
 			    addSeries("Series I", [11]).
-			    addSeries("Seires J", [12]);
+			    addSeries("Seires J", [12]));
 
 				var anim4b = new Tooltip(chart, "default", {text: makeTooltip});
 
