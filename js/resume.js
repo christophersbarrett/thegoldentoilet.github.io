@@ -47,7 +47,7 @@ function clickListen(domClass, on, dom, Chart, theme, Tooltip, query, Default)
 
 makeTooltip = function(o) {
 	var text;
-	
+
 	switch (o.x) {
 	case 1:
 		text = "Runzheimer, Intl - Intern";
@@ -73,6 +73,12 @@ makeTooltip = function(o) {
 	case 10:
 		text = "Software Engineer - Sitepen, inc.";
 		break;
+	case 11:
+		text = "JavaScript Engineer - Toura LLC.";
+		break;
+	case 12:
+		test = "JavaScript Engineer/Team Lead - Flexion, Inc."
+		break;
 	default:
 		text = "hmmm some shit missin right hur";
 		break;
@@ -89,7 +95,8 @@ makeChart =  function(Chart, theme, Tooltip, Default, domClass) {
 						{value: 3, text: "2005"}, {value: 4, text: "2006"},
 						{value: 5, text: "2007"}, {value: 6, text: "2008"},
 						{value: 7, text: "2009"}, {value: 8, text: "2010"},
-						{value: 9, text: "2011"}, {value: 10, text: "2012"}
+						{value: 9, text: "2011"}, {value: 10, text: "2012"},
+						{value: 11, text: "2013"}, {value: 12, text: "2014"})
 					],
 					rotation: 45
 				}).
@@ -105,10 +112,12 @@ makeChart =  function(Chart, theme, Tooltip, Default, domClass) {
 				addSeries("Series E", [5]).
 				addSeries("Series F", [6.7]).
 				addSeries("Series G", [9]).
-			    addSeries("Series H", [10]);
-			
+			    addSeries("Series H", [10]).
+			    addSeries("Series I", [11]).
+			    addSeries("Seires J", [12]);
+
 				var anim4b = new Tooltip(chart, "default", {text: makeTooltip});
-				
+
 				chart.render();
 
 				chart.connectToPlot("default",function(evt) {
