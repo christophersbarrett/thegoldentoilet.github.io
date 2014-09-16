@@ -4,7 +4,6 @@ var currentJob = "12";
 function clickListen(domClass, on, dom, Chart, theme, Tooltip, query, Default)
 {
 	on(dom.byId("atimeline"), "click", function(){
-		console.log('click');
 		domClass.toggle(dom.byId("timeline"), "hide");
 		domClass.toggle(currentDiv, "hide");
 		if(chart === null) {
