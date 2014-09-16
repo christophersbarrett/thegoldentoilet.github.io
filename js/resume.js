@@ -49,7 +49,7 @@ function clickListen(domClass, on, dom, Chart, theme, Tooltip, query, Default)
 makeTooltip = function(o) {
 	var text;
 
-	switch (o.x) {
+	switch (o.y) {
 	case 1:
 		text = "Runzheimer, Intl - Intern";
 		break;
@@ -78,7 +78,7 @@ makeTooltip = function(o) {
 		text = "JavaScript Engineer - Toura LLC.";
 		break;
 	case 12:
-		test = "JavaScript Engineer/Team Lead - Flexion, Inc."
+		text = "JavaScript Engineer/Team Lead - Flexion, Inc."
 		break;
 	default:
 		text = "hmmm some shit missin right hur";
@@ -139,13 +139,7 @@ makeChart =  function(Chart, theme, Tooltip, Default, domClass) {
 };
 
 changeJob = function(divJob, domClass) {
-
-	console.log("currentJob: ", currentJob);
-	console.log("divJob: ", divJob);
 	domClass.toggle(currentJob, "hide");
-	console.log('1', divJob, domClass);
-
     domClass.toggle(divJob, "hide");
-    console.log('2');
     currentJob = divJob;
 };

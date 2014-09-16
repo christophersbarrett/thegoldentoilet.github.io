@@ -12,7 +12,7 @@ html, body {
 }
 a:link { color: #313131; }
 a:visited { color: #313131; }
-a:hover, 
+a:hover,
 a:active { color: #908c8c; }
 
 h1 { font-size: 2em; }
@@ -53,7 +53,7 @@ a.highlight-button, input.highlight-button {
 a.highlight-button-circle {
 	background:#b4b2b2;
 	padding:2px 15px;
-	
+
 	font-size:1.2em;
 	border-radius: 60px; /* No longer supporting old browsers */
 	-moz-border-radius: 60px; /* Fix for FF */
@@ -75,8 +75,8 @@ a.highlight-button-circle:hover {
 /* Layout Styles
 ----------------------------*/
 
-div#container { 
-  width: 900px; 
+div#container {
+  width: 900px;
   margin: 0px auto;
 	z-index: 1;
 }
@@ -106,7 +106,7 @@ div#header h1 a {
 
 div#content { }
 
-div#content h2 { 
+div#content h2 {
 
   font-size:2.3em;
   margin:25px 0 25px 0;
@@ -124,7 +124,7 @@ div.pane {
 div.content-pane div.pane {
 	border-bottom:4px solid #e1e0e0;
 	margin-bottom:60px;
-	
+
 	height: 700px;
 }
 
@@ -171,6 +171,18 @@ div#top-intro p a {	color:#999999; }
 }
 /* Portfolio page
 ----------------------------*/
+div.portRight {
+	width:50%;
+	position:relative;
+	float:right;
+	padding-top: 20px;
+}
+
+div.portLeft {
+	width:50%;
+	padding-top: 20px;
+	float:left;
+}
 
 div.intro {
 	float:left;
@@ -326,7 +338,7 @@ div.alternate {
 }
 
 div.post:hover {
-	
+
 }
 
 div.post:hover div.summary {
@@ -378,7 +390,7 @@ div.post div.date span.day, div.post div.date span.month {
 	width:100px;
 	text-align:center;
 	display:block;
-} 
+}
 
 div.post div.date span.day {
 	font-size:2.5em;
@@ -522,59 +534,6 @@ div.post-intro div.intro-content div.details {
 .dj_ie7 #IE7_warning {
 	display: block;
 }
-div.portfolio-panels {
-	
-}
-
-div.portfolio-panels div.portfolio-panel {
-	width: 900px;
-	margin:0px;
-}
-
-div.portfolio-panels div.portfolio-panel div.details {
-	float: left;
-	width: 800px;
-}
-
-div.portfolio-panels div.portfolio-panel div.details h3 {
-	color: #aaa;
-	font-size: 2.4em;
-	margin-bottom: 10px;
-}
-
-
-div.portfolio-panels div.portfolio-panel div.details p.link {
-	font-size: 0.9em;
-	margin-top: 10px;
-}
-
-
-div.portfolio-panels div.portfolio-panel div.details p.description {
-	text-transform: uppercase;
-	font-size: 0.9em;
-}
-
-div.portfolio-panels div.portfolio-panel div.portfolio-image {
-	background: #556371;
-	padding: 4px 4px 0;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	margin-bottom:20px;
-}
-
-div.portfolio-panels div.portfolio-panel div.portfolio-image img {
-	height: 292px;
-    width: 892px;
-}
-
-
-div.porfolio-navigation {
-	position: absolute;
-	top: 396px;
-	right: 0px;
-	z-index:999;
-}
 
 div.scroll {
 	height: 600px;
@@ -651,11 +610,11 @@ div.text-area div.error {
 
 
 div.error-state {
-	
+
 }
 
 div.submit-row {
-	
+
 }
 
 div.submit-row input {
