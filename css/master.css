@@ -158,10 +158,6 @@ div#top-intro p {
 	padding-top: 1em;
 }
 
-div#top-intro h2 {
-
-}
-
 div#top-intro p a {	color:#999999; }
 
 .jobsContainer {
@@ -172,16 +168,20 @@ div#top-intro p a {	color:#999999; }
 /* Portfolio page
 ----------------------------*/
 div.portRight {
-	width:50%;
+	width:49%;
 	position:relative;
 	float:right;
 	padding-top: 20px;
 }
 
 div.portLeft {
-	width:50%;
+	width:49%;
 	padding-top: 20px;
 	float:left;
+}
+
+div.portTop {
+	height: 210px;
 }
 
 div.intro {
